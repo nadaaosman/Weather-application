@@ -51,7 +51,7 @@ Start the development server:
 ```
 npm start
 ```
-## App Demo 🖥️ <a name = "demo"></a>
+## 🖥️ App Demo  <a name = "demo"></a>
 
 
 https://github.com/nadaaosman/Weather-application/assets/84284180/0fc3e861-225b-46c6-9c58-de2edffcde18
@@ -60,7 +60,7 @@ https://github.com/nadaaosman/Weather-application/assets/84284180/0fc3e861-225b-
 https://github.com/nadaaosman/Weather-application/assets/84284180/3880642c-378c-484c-a5b3-f960b3edeca0
 
 
-## Usage ❄️<a name = "usage"></a>
+## ❄️ Usage <a name = "usage"></a>
 
 - Select a country then the city.
 
