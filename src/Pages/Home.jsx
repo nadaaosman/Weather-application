@@ -1,5 +1,4 @@
 import { Box, styled, Alert } from '@mui/material';
-//import Cover from '../assests/images/Clear.jpg';
 import Form from '../components/Form';
 import Data from '../components/Data';
 import { useState } from 'react';
@@ -14,11 +13,11 @@ const Component = styled(Box)({
   left: '0'
 });
 const BackgroundContainer = styled(Box)(({ description }) => ({
-  background: `url(${process.env.PUBLIC_URL}/assests/images/${description}.jpg)`, // Set the background image properties
+  background: `url(${process.env.PUBLIC_URL}/assests/images/${description}.jpg)`, 
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
-  backgroundColor: 'rgba(255, 255, 255, 0)' // Adjust the alpha value (0.3) for transparency
+  backgroundColor: 'rgba(255, 255, 255, 0)'
 }));
 
 const Info = styled(Box)({
@@ -32,7 +31,7 @@ const Info = styled(Box)({
 
 const Home = () => {
   const [result, setResult] = useState({});
-  const [description, setDescription] = useState('sunset');
+  const [description, setDescription] = useState('Cover');
   const [valid, setValid] = useState(true);
   return (
     <BackgroundContainer description={description}>

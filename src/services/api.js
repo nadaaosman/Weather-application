@@ -19,9 +19,8 @@ export const getAllCountries = async () => {
       return response.data;
     } catch (error) {
       console.error('Error fetching countries:', error);
-      throw error; // Rethrow the error to handle it elsewhere if needed
+      throw error; 
     }
   }
-  //https://restcountries.com/v3.1/all
 
 

@@ -12,13 +12,13 @@ const Container = styled(Box)({
   padding: 13,
   borderRadius: '50px',
   display: 'flex',
-  width:'70%',
+  width: '70%',
   flexDirection: 'row',
-  justifyContent:'space-around',
+  justifyContent: 'space-around',
   alignItems: 'center'
 });
 
-const Form = ({ setResult ,setValid}) => {
+const Form = ({ setResult, setValid }) => {
   const [countries, setCountries] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState('');
   const [cities, setCities] = useState([]);
@@ -28,15 +28,14 @@ const Form = ({ setResult ,setValid}) => {
     const getWeatherInfo = async () => {
       if (selectedCity.trim() !== '') {
         console.log('selectedcity', selectedCity);
-        let response = await getWeather(selectedCity,selectedCountry);
+        let response = await getWeather(selectedCity, selectedCountry);
         console.log('response', response);
-        // -1 not found
-        if (response === -1) 
-        setValid(false);
-        else {     setResult(response);
-                   setValid(true);
+        if (response === -1) setValid(false);
+        else {
+          setResult(response);
+          setValid(true);
+        }
       }
-    }
     };
     getWeatherInfo();
   }, [selectedCity]);
@@ -65,20 +64,16 @@ const Form = ({ setResult ,setValid}) => {
   }, []);
 
   useEffect(() => {
-    // Find the selected country by its name
     const country = countries.find((c) => c.country === selectedCountry);
     if (country) {
-      // Extract the cities and their IDs from the selected country
       const cities = country.cities.map((city) => ({
         id: city.id,
         city: city.city
       }));
 
-      // Update the cities state with the selected country's cities and IDs
       console.log('aloo', cities);
       setCities(cities);
     }
-    // Reset the selected city when the country changes
     setSelectedCity('');
   }, [selectedCountry]);
 
@@ -91,7 +86,7 @@ const Form = ({ setResult ,setValid}) => {
     const city = event.target.value;
     setSelectedCity(city);
   };
- 
+
   return (
     <Container>
       <FormControl
@@ -101,8 +96,8 @@ const Form = ({ setResult ,setValid}) => {
         <InputLabel
           id="country-label"
           style={{
-            fontSize: '20px', // Adjust the font size as needed
-            color: 'white' // Change the color to your desired value
+            fontSize: '20px',
+            color: 'white'
           }}
         >
           Country
@@ -114,10 +109,9 @@ const Form = ({ setResult ,setValid}) => {
           onChange={handleCountryChange}
           label="Country"
           style={{
-            fontSize: '20px', // Adjust the font size as needed
-            color: 'white' // Change the color to your desired value
+            fontSize: '20px',
+            color: 'white'
           }}
-          
         >
           {countries.map((country) => (
             <MenuItem
@@ -137,8 +131,8 @@ const Form = ({ setResult ,setValid}) => {
         <InputLabel
           id="city-label"
           style={{
-            fontSize: '20px', // Adjust the font size as needed
-            color: 'white' // Change the color to your desired value
+            fontSize: '20px',
+            color: 'white'
           }}
         >
           City
@@ -151,8 +145,8 @@ const Form = ({ setResult ,setValid}) => {
           label="City"
           disabled={!selectedCountry}
           style={{
-            fontSize: '20px', // Adjust the font size as needed
-            color: 'white' // Change the color to your desired value
+            fontSize: '20px',
+            color: 'white'
           }}
         >
           {cities.map((city) => (
