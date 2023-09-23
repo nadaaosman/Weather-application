@@ -1,71 +1,79 @@
-# Getting Started with Create React App
+# Weather App
+![Haze](https://github.com/nadaaosman/Weather-application/assets/84284180/a11d4baa-d805-4585-a807-50dbb2008c87)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ThunderStorm](https://github.com/nadaaosman/Weather-application/assets/84284180/459f0730-bb08-4104-81c9-570dba4716bb)
 
-## Available Scripts
+![Mist](https://github.com/nadaaosman/Weather-application/assets/84284180/92af3a80-1873-47a1-8bac-177d4d86f798)
 
-In the project directory, you can run:
+![Rain](https://github.com/nadaaosman/Weather-application/assets/84284180/3a23bd99-a21a-4d76-a4d1-9546158c73cf)
 
-### `npm start`
+![Clear](https://github.com/nadaaosman/Weather-application/assets/84284180/a44185d2-1e70-4aff-808b-efe94acf82d3)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Clouds](https://github.com/nadaaosman/Weather-application/assets/84284180/8b0ae833-8729-4766-848e-713fd3630410)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📙 About <a name = "about"></a>
 
-### `npm test`
+This is a simple weather application built using React and Material-UI. 
+It fetches current weather data from an open API and displays it to the user.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💻 Technology <a name = "technolgies"></a>
+## Technologies Used
 
-### `npm run build`
+- ![React](https://img.shields.io/badge/React-%2300599C.svg?style=for-the-badge&logo=react&logoColor=white) - A JavaScript library for building user interfaces. [Learn more](https://reactjs.org/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ![Material-UI](https://img.shields.io/badge/Material--UI-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white) - A popular React UI framework for designing modern and responsive user interfaces. [Learn more](https://material-ui.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ![Axios](https://img.shields.io/badge/Axios-%233A99D8.svg?style=for-the-badge) - A promise-based HTTP client for making API requests. Used for fetching data from external APIs. [Learn more](https://axios-http.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ![OpenWeatherMap API](https://img.shields.io/badge/OpenWeatherMap%20API-%23FDB813.svg?style=for-the-badge) - An open API used to fetch current weather data. [Learn more](https://openweathermap.org/api)
 
-### `npm run eject`
+## 👌 Features <a name = "features"></a>
+- Display the current weather conditions for a given location.
+- Use Material-UI for a modern and responsive user interface.
+- Fetch weather data from an open API.
+- Easily customizable for further development.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started <a name = "started"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone this repository to your local machine:
+```
+git clone https://github.com/your-username/react-weather-app.git
+```
+Install the project dependencies:
+```
+npm install
+```
+Create a .env file in the project root and add your API key. You can obtain an API key from the OpenWeatherMap API:
+```
+REACT_APP_API_KEY=your_api_key_here
+```
+Start the development server:
+```
+npm start
+```
+## App Demo 🖥️ <a name = "demo"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+https://github.com/nadaaosman/Weather-application/assets/84284180/0fc3e861-225b-46c6-9c58-de2edffcde18
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://github.com/nadaaosman/Weather-application/assets/84284180/3880642c-378c-484c-a5b3-f960b3edeca0
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Usage ❄️<a name = "usage"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Select a country then the city.
 
-### Analyzing the Bundle Size
+- The app will display the current temperature, weather conditions, and other relevant information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Dependencies <a name = "dependencies"></a>
+- React: https://reactjs.org/
+- Material-UI: https://material-ui.com/
+- Axios: https://axios-http.com/
 
-### Making a Progressive Web App
+## API Used <a name = "api-used"></a>
+This application uses the OpenWeatherMap API to fetch weather data. You can find more information about the API here: https://openweathermap.org/api
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# Weather-application" 
+> This software is licensed under MIT License, See [License](https://github.com/Waer1/Crazy-Delivery/blob/master/LICENSE.txt) for more information.
