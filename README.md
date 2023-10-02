@@ -37,7 +37,7 @@ It fetches current weather data from an open API and displays it to the user.
 
 Clone this repository to your local machine:
 ```
-git clone https://github.com/your-username/react-weather-app.git
+git clone https://github.com/nadaaosman/react-weather-app.git
 ```
 Install the project dependencies:
 ```
